@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import {AiOutlineMenu,AiOutlineHome} from 'react-icons/ai'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)
@@ -17,10 +18,10 @@ const Navbar = () => {
                         <div className="grid grid-cols-2 gap-4">
                             <ul className="text-sm text-gray-700 dark:text-gray-400 mt-1">
                                 <li className="mb-2">
-                                    <button type="button"
+                                    <Link to="LoginPage"
                                         className="w-full text-black font-semibold border-2 border-pink-600 hover:border-pink-400  rounded-lg text-sm px-4 py-2 text-center">
                                         Sign In
-                                    </button>
+                                    </Link>
                                 </li>
                                 <li>
                                     <a href="#" className="block px-4 py-2 hover:bg-gray-100">WeddingBands</a>
@@ -69,10 +70,10 @@ const Navbar = () => {
             <div class="hidden mt-3 ml-3 items-center md:flex">
                 <img src="/public/assets/img/logo.png" alt="Logo" class="w-44 mr-3 h-auto" />
                 <input type="text" id="search-navbar" className="block w-[68%] p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:border-pink-400" placeholder="Search..." />
-                <button type="button"
-                    class="font-semibold text-gray-500 hover:bg-gray-100 rounded-full text-sm px-4 py-2 text-center">
+                <Link to="/LoginPage"
+                    className="font-semibold text-gray-500 hover:bg-gray-100 rounded-full text-sm px-4 py-2 text-center">
                     Sign In
-                </button>      
+                </Link>      
                 <button type="button"
                     class="text-white font-semibold bg-pink-600  hover:bg-pink-500 rounded-full text-sm px-4 py-2 text-center">
                     Sign Up
